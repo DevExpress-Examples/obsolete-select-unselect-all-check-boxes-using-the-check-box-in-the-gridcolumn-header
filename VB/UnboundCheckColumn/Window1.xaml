@@ -1,0 +1,43 @@
+﻿<Window x:Class="UnboundCheckColumn.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1"
+        Height="800"
+        Width="400"
+        xmlns:local="clr-namespace:UnboundCheckColumn"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <dxg:GridControl x:Name="grid">
+            <i:Interaction.Behaviors>
+                <local:RowSelectionBehavior/>
+            </i:Interaction.Behaviors>
+            <dxg:GridControl.Columns>
+                <local:SelectAllColumn/>
+                <dxg:GridColumn FieldName="ID" />
+                <dxg:GridColumn FieldName="Value" />
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView x:Name="view" AutoWidth="True" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+        <dxg:GridControl x:Name="grid2" Grid.Row="1">
+            <i:Interaction.Behaviors>
+                <local:RowSelectionBehavior/>
+            </i:Interaction.Behaviors>
+            <dxg:GridControl.Columns>
+                <local:SelectAllColumn/>
+                <dxg:GridColumn FieldName="ID" />
+                <dxg:GridColumn FieldName="Value" />
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView x:Name="view2" AutoWidth="True" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
