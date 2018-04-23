@@ -1,0 +1,25 @@
+﻿<Window x:Class="UnboundCheckColumn.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1"
+        Height="400"
+        Width="400"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Click="Button_Click">AllowSelectionSinchronize</Button>
+        <dxg:GridControl x:Name="grid" Grid.Row="1">
+            <dxg:GridControl.Columns>
+                <dxg:SelectAllColumn/>
+                <dxg:GridColumn FieldName="ID" />
+                <dxg:GridColumn FieldName="Value" />
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:SelectionView x:Name="view" AutoWidth="True" MultiSelectMode="Row"/>
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
