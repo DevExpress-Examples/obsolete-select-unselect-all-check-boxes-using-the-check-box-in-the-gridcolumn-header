@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [RowSelectionBehavior.cs](./CS/UnboundCheckColumn/RowSelectionBehavior.cs) (VB: [RowSelectionBehavior.vb](./VB/UnboundCheckColumn/RowSelectionBehavior.vb))
+* [Window1.xaml](./CS/UnboundCheckColumn/Window1.xaml) (VB: [Window1.xaml.vb](./VB/UnboundCheckColumn/Window1.xaml.vb))
+* [Window1.xaml.cs](./CS/UnboundCheckColumn/Window1.xaml.cs) (VB: [Window1.xaml.vb](./VB/UnboundCheckColumn/Window1.xaml.vb))
+<!-- default file list end -->
 # How to select/unselect all check boxes using the check box in the GridColumn header
 
 
